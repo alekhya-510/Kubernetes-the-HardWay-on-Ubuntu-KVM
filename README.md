@@ -6,4 +6,4 @@ Setting up virtual machines :
 
 one jump server and control plane and 2 worker nodes as below 
 
-![virtual machines setup](/images/running_vms.png)
+!(/images/running_vms.png)
