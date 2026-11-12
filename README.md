@@ -1,5 +1,6 @@
 # kubernetes_cluster_hardway_setup
-Documenting setup of kubernetes clusters in hardway
+
+Documenting setup of kubernetes clusters from scratch following Kelsey Hightower’s kubernetes-the-hard-way.
 
 
 Setting up virtual machines :
