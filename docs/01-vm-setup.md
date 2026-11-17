@@ -132,3 +132,14 @@ EOF
 - [x] Four VMs running under libvirt
 - [x] SSH from the physical host to all four VMs
 - [x] SSH from the jumpbox to the three nodes by name
+
+
+Once the keys copied to server and other nodes , it's time to download the binaries and install the kubectl once it is done kubectl 
+client can be verified as below:
+
+```bash
+kubectl version --client
+```
+
+Output: 
+![Jumpbox_kubectl](images/jumpbox_kubectl.jpg)
