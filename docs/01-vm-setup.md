@@ -35,7 +35,7 @@ ls -lh /var/lib/libvirt/images/noble-base.img
 ls ~/.ssh/id_ed25519.pub
 ```
 
-## 2. Create the VMs
+## 3. Create the VMs
 
 `scripts/create-vms.sh` creates each VM with a static IP on the default network, a fixed MAC address, and the SSH public key from cloud-init.
 
@@ -57,24 +57,13 @@ sudo bash scripts/create-vms.sh
 sudo virsh list --all
 ```
 
-Expected output: all four VMs are `running`.
 
-Actual output:
+Output:
 
 ![VMS running](/images/virsh_list_all.jpg)
 
 
 
-If you need to rebuild, remove the existing VMs first:
-
-```bash
-for n in jumpbox server node-0 node-1; do
-  sudo virsh destroy $n 2>/dev/null || true
-  sudo virsh undefine $n --remove-all-storage 2>/dev/null || true
-done
-```
-
-Wait one to two minutes after creation for cloud-init to finish first boot.
 
 ## 4. Verify SSH from the physical host
 
@@ -82,7 +71,11 @@ Wait one to two minutes after creation for cloud-init to finish first boot.
 for ip in 192.168.122.1{0..3}; do ssh -o StrictHostKeyChecking=no ubuntu@$ip hostname; done
 ```
 
-Expected output: `jumpbox`, `server`, `node-0`, and `node-1`, in that order.
+Output:
+
+![Servers](/images/servers.jpg)
+
+
 
 ## Issues encountered
 
