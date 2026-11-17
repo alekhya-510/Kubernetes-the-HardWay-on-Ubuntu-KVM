@@ -142,4 +142,4 @@ kubectl version --client
 ```
 
 Output: 
-![Jumpbox_kubectl](images/jumpbox_kubectl.jpg)
+![Jumpbox_kubectl](/images/jumpbox_kubectl.jpg)
