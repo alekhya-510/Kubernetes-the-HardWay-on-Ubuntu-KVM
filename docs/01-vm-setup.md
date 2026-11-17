@@ -19,21 +19,6 @@ sudo apt install -y qemu-system-x86 libvirt-daemon-system libvirt-clients bridge
 
 ```
 
-## 2. Download the Ubuntu cloud image and create an SSH key
-
-```bash
-sudo mkdir -p /var/lib/libvirt/images
-sudo wget -O /var/lib/libvirt/images/noble-base.img \
-  https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
-[ -f ~/.ssh/id_ed25519 ] || ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519
-```
-
-Confirm both files exist:
-
-```bash
-ls -lh /var/lib/libvirt/images/noble-base.img
-ls ~/.ssh/id_ed25519.pub
-```
 
 ## 3. Create the VMs
 
