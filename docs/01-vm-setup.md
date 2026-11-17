@@ -60,6 +60,7 @@ sudo virsh list --all
 Expected output: all four VMs are `running`.
 
 Actual output:
+
 ![VMS running](/images/virsh_list_all.jpg)
 
 
