@@ -44,8 +44,8 @@ Log out and back in so the group change applies.
 
 | Stage | Notes | Status |
 |---|---|---|
-| [01. VM setup](docs/01-vm-setup.md) | KVM install, cloud image, four VMs, SSH access
-| [02. Jumpbox setup](docs/02-jumpbox.md) | Install `kubectl` 
+| [01. VM setup](docs/01-vm-setup.md) | KVM install, cloud image, four VMs, SSH access | completed |
+| [02. Jumpbox setup](docs/02-jumpbox.md) | Install `kubectl` | completed |
 | 03. Certificates | CA and component certificates | Not started |
 | 04. Kubeconfigs | Kubelet, kube-proxy, controller, scheduler, admin | Not started |
 | 05. etcd | Bootstrap etcd on `server` | Not started |
