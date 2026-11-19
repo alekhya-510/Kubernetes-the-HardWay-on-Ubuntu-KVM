@@ -47,7 +47,7 @@ Log out and back in so the group change applies.
 | [01. VM setup](docs/01-vm-setup.md) | KVM install, cloud image, four VMs, SSH access | completed |
 | [02. Jumpbox setup](docs/02-jumpbox.md) | Install `kubectl` | completed |
 | [03. Certificates](docs/03-certificates.md) | CA and component certificates | completed |
-| 04. Kubeconfigs | Kubelet, kube-proxy, controller, scheduler, admin | Not started |
+| [04. Kubeconfigs](docs/04-kubeconfigs.md) | Kubelet, kube-proxy, controller, scheduler, admin | completed |
 | 05. etcd | Bootstrap etcd on `server` | Not started |
 | 06. Control plane | API server, controller manager, scheduler | Not started |
 | 07. Workers | containerd, kubelet, kube-proxy on `node-0` and `node-1` | Not started |
