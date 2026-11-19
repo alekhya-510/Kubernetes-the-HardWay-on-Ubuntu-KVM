@@ -43,13 +43,15 @@ Keys are mode `600`, and certificates are mode `644`.
 openssl x509 -in kube-api-server.crt -noout -text | grep -A1 "Subject Alternative Name"
 ```
 
+![](/images/openssl.jpg)
+
 The SANs include `10.32.0.1`, `server.kubernetes.local`, and `api-server.kubernetes.local`.
 
 ```bash
 openssl x509 -in ca.crt -noout -subject
 openssl x509 -in kube-api-server.crt -noout -issuer
 ```
-
+![](/images/opensslca.jpg)
 Both print `CN = CA`, so the API server certificate was issued by this CA.
 
 ## 4. Distribute certificates
