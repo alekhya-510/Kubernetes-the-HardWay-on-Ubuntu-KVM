@@ -194,10 +194,12 @@ Expected: containerd `2.1.0-beta.0` and kubelet `v1.32.3`.
 On `server`:
 
 ```bash
-kubectl get nodes -o wide
+kubectl get nodes 
 ```
 
-Expected: `node-0` and `node-1` with status `Ready`, `INTERNAL-IP` set to `192.168.122.12` and `192.168.122.13`, and runtime `containerd://2.1.0-beta.0`.
+![](/images/cluster_working.jpg)
+
+
 
 `PODCIDR` shows `<none>` for both nodes. This is expected in this lab, because the pod subnets are set in the CNI bridge config on each worker, not on the node object.
 
@@ -243,7 +245,8 @@ Clean up:
 ```bash
 kubectl delete pod pod-a pod-b
 ```
-![](images/cluster_working.jpg)
+
+
 ## Issues encountered
 
 **`sudo` in front of a shell redirect failed with `Permission denied`.** The `>>` redirect runs as your user, so use `sudo tee -a` instead.
