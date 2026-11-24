@@ -113,6 +113,9 @@ EOF
 
 ![](/images/pod-networking.jpg)
 
+
+![](images/server-workernode-route.jpg)
+
 ## Issues encountered
 
 **`ip route add` failed with `RTNETLINK answers: Operation not permitted`.** The command ran as `ubuntu` without `sudo`. Route changes need root.
