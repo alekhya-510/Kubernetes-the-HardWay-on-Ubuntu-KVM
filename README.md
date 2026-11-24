@@ -52,7 +52,7 @@ Log out and back in so the group change applies.
 | [06. Control plane](docs/06-control-plane.md) | API server, controller manager, scheduler | Completed |
 | [07. Worker_nodes](docs/07-worker-nodes.md) | containerd, kubelet, kube-proxy on `node-0` and `node-1` | completed |
 | [08. Configuring-kubectl-RemoteAccess](/docs/08-Configuring-kubectl-RemoteAccess.md) | Configuring kubectl for Remote Access | completed |
-| 09. Networking | Pod routes and CNI | Not started |
+| [09. Networking](docs/09-networking.md) | Pod routes and CNI | completed|
 | 10. Smoke test | Deployment, port-forward, NodePort service | Not started |
 
 ## Differences from the tutorial
