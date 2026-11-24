@@ -50,7 +50,7 @@ Log out and back in so the group change applies.
 | [04. Kubeconfigs](docs/04-kubeconfigs.md) | Kubelet, kube-proxy, controller, scheduler, admin | completed |
 | [05. etcd](docs/05-etcd.md) | Bootstrap etcd on `server` | completed |
 | [06. Control plane](docs/06-control-plane.md) | API server, controller manager, scheduler | Completed |
-| 07. Workers | containerd, kubelet, kube-proxy on `node-0` and `node-1` | Not started |
+| [07. Worker_nodes](docs/07-worker-nodes.md) | containerd, kubelet, kube-proxy on `node-0` and `node-1` | completed |
 | 08. Networking | Pod routes and CNI | Not started |
 | 09. Smoke test | Deployment, port-forward, NodePort service | Not started |
 
