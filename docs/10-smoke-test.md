@@ -100,8 +100,7 @@ If a worker doesn't answer, check `kube-proxy` on that worker:
 ssh ubuntu@node-0 "systemctl is-active kube-proxy; sudo iptables -t nat -L KUBE-NODEPORTS -n | head"
 ```
 
-
-![](images/smoke-test.jpg)
+![](/images/smoke-test.jpg)
 
 
 ## Cleanup
