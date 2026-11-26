@@ -53,7 +53,7 @@ Log out and back in so the group change applies.
 | [07. Worker_nodes](docs/07-worker-nodes.md) | containerd, kubelet, kube-proxy on `node-0` and `node-1` | completed |
 | [08. Configuring-kubectl-RemoteAccess](/docs/08-Configuring-kubectl-RemoteAccess.md) | Configuring kubectl for Remote Access | completed |
 | [09. Networking](docs/09-networking.md) | Pod routes and CNI | completed|
-| 10. Smoke test | Deployment, port-forward, NodePort service | Not started |
+| [10. Smoke test](docs/10-smoke-test.md) | Deployment, port-forward, NodePort service | Completed|
 
 ## Differences from the tutorial
 
@@ -77,6 +77,7 @@ kubernetes_cluster_hardway_setup/
 ├── README.md
 ├── images/
 │   └── running_vms.png
+| 
 ├── scripts/
 │   └── create-vms.sh
 └── docs/
