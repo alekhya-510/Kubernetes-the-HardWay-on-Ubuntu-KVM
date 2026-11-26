@@ -73,15 +73,23 @@ Log out and back in so the group change applies.
 ## Repository layout
 
 ```
-kubernetes_cluster_hardway_setup/
+Kubernetes-the-HardWay-on-Ubuntu-KVM/
 ├── README.md
 ├── images/
 │   └── running_vms.png
-| 
 ├── scripts/
 │   └── create-vms.sh
 └── docs/
-    └── 01-vm-setup.md
+    ├── 01-vm-setup.md
+    ├── 02-jumpbox.md
+    ├── 03-certificates.md
+    ├── 04-kubeconfigs.md
+    ├── 05-etcd.md
+    ├── 06-control-plane.md
+    ├── 07-worker-nodes.md
+    ├── 08-Configuring-kubectl-RemoteAccess.md
+    ├── 09-networking.md
+    └── 10-smoke-test.md
 ```
 
 ## Security note
