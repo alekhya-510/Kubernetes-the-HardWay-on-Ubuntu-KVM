@@ -132,4 +132,4 @@ kubectl delete pod pod-a pod-b
 - [x] `kubectl exec ... nginx -v` reports `nginx/1.31.10`
 - [x] `kubectl port-forward` forwards to the pod, and `curl` returns `HTTP/1.1 200 OK`
 - [x] NodePort service exposed, and `curl` through the pod's node returns `HTTP/1.1 200 OK`
-- [ ] NodePort checked through the other worker
+- [x] NodePort checked through the other worker
